@@ -27,58 +27,64 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/anim.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="site-header sticky-top p-2 text-white">
+    <header class="site-header sticky-top p-2">
       <div class="container d-flex flex-md-row justify-content-between">
-        <a href="#" class="site-header__link text-white">Главная</a>
-        <a href="#" class="site-header__link text-white">Обо мне</a>
-        <a href="#" class="site-header__link text-white">Навыки</a>
-        <a href="#" class="site-header__link text-white">Работы</a>
-        <a href="#" class="site-header__link text-white">Контакты</a>
+        <a href="#main" class="site-header__link">Главная</a>
+        <a href="#about" class="site-header__link">Обо мне</a>
+        <a href="#skills" class="site-header__link">Навыки</a>
+        <a href="#portfolio" class="site-header__link">Работы</a>
+        <a href="#contacts" class="site-header__link">Контакты</a>
       </div>
     </header>
 
-    <div class="site-main">
+    <div class="site-main section">
+      <a name="main"></a>
       <div
         class="container d-flex justify-content-center align-items-center site-main-inner"
       >
-        <div class="site-main-content col-md-6 mx-auto wow fadeInLeft">
+        <div class="site-main-content col-md-6 mx-auto wow animate__backInDown">
           <h1 class="site-main__title text-uppercase p-4">
             Привет, меня зовут Влад,<br />
             я <span class="front-end">front-end</span> разработчик.
           </h1>
-          <span class="tag tag-1">&lt;section&gt;</span>
-          <span class="tag tag-2">&lt;header&gt;</span>
-          <span class="tag tag-3">&lt;footer&gt;</span>
-          <span class="tag tag-4">&lt;br&gt;</span>
+          <span class="tag tag-1 wow animate__flash">&lt;section&gt;</span>
+          <span class="tag tag-2 wow animate__flash">&lt;header&gt;</span>
+          <span class="tag tag-3 wow animate__flash">&lt;footer&gt;</span>
+          <span class="tag tag-4 wow animate__flash">&lt;br&gt;</span>
 
-          <span class="tag tag-5">&lt;main&gt;</span>
-          <span class="tag tag-6">&lt;article&gt;</span>
-          <span class="tag tag-7">&lt;strong&gt;</span>
-          <span class="tag tag-8">&lt;abbr&gt;</span>
+          <span class="tag tag-5 wow animate__flash">&lt;main&gt;</span>
+          <span class="tag tag-6 wow animate__flash">&lt;article&gt;</span>
+          <span class="tag tag-7 wow animate__flash">&lt;strong&gt;</span>
+          <span class="tag tag-8 wow animate__flash">&lt;abbr&gt;</span>
         </div>
       </div>
     </div>
 
-    <div class="site-about pb-5">
+    <div class="site-about pb-5 section">
+      
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-4">
-              <h1 class="site-dark-title section-title pt-2 pb-2 mt-5 mb-5">
-                Обо мне
-              </h1>
+            <a name="about"></a>
+            <h1
+              class="site-dark-title section-title pt-2 pb-2 mt-5 mb-5 wow animate__rotateInDownLeft"
+            >
+              Обо мне
+            </h1>
           </div>
         </div>
-
+        
+        
         <div class="row justify-content-start wow animate__backInLeft">
           <div class="col-md-10">
             <p class="site-about__text">
@@ -98,25 +104,28 @@
       </div>
     </div>
 
-    <div class="site-skills pt-5 pb-5 dotted">
+    <div class="site-skills pt-5 pb-5 section">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-4">
-            <h1 class="site-skills__title section-title pt-2 mt-5 mb-4">
+            <a name="skills"></a>
+            <h1
+              class="site-skills__title section-title pt-2 mt-5 mb-4 wow animate__rotateInDownLeft"
+            >
               Навыки
             </h1>
           </div>
         </div>
 
-        <div class="row justify-content-between mt-5 wow fadeInUp">
+        <div class="row justify-content-between mt-5 wow animate__swing">
           <div class="col-md-4 skills-js">
             <h1 class="site-skills-title pt-3 pl-3">
               JavaScript &nbsp;<i class="fab fa-js"></i>
             </h1>
             <ul class="site-skills-list list-group p-3 ml-4">
               <li class="mt-2">EcmaScript5+</li>
-              <li class="">React (react hooks, react-router)</li>
-              <li class="">Redux (redux-thunk)</li>
+              <li class="">React</li>
+              <li class="">Redux</li>
               <li class="">NodeJS (основы)</li>
               <li class="">Регулярные выражения</li>
             </ul>
@@ -146,14 +155,123 @@
       </div>
     </div>
 
-    <div class="site-portf">
+    <div class="site-portf pb-5 section">
+      <a name="portfolio"></a>
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-start">
           <div class="col-md-4">
-            <h1 class="site-dark-title section-title p-2 mt-5 mb-5">
+            <h1 class="site-dark-title section-title pt-2 pb-3 mt-5 mb-5 wow animate__rotateInDownLeft">
               Мои работы
             </h1>
           </div>
+        </div>
+
+        <div class="row pb-5 wow animate__jackInTheBox">
+          <div class="col-md-3">
+            <div
+              class="flip-container vertical site-portf-block"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+            <a href="https://github.com/C01dy/bookstore-react-redux" target="_blank">
+              <div class="flipper">
+                <div class="front">
+                  <h4 class="text-uppercase">Book store</h4>
+                </div>
+                <div class="back pl-3">
+                  <ul>
+                    <li>&mdash;&nbsp;Добваление товара в корзину, и удаление</li>
+                    <li>&mdash;&nbsp;Редактирование корзины</li>
+                    <li>&mdash;&nbsp;Фильтрация товаров</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="flip-container vertical site-portf-block"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+            <a href="https://github.com/C01dy/react-bank-card-form" target="_blank">
+              <div class="flipper">
+                <div class="front">
+                  <h4 class="text-uppercase">Credit-card from</h4>
+                </div>
+                <div class="back p-3">
+                  <ul>
+                    <li>&mdash;&nbsp;Форма с валидацией</li>
+                    <li>&mdash;&nbsp;Регулярные выражения</li>
+                    <li>&mdash;&nbsp;react-hook-form</li>
+                    <li>&mdash;&nbsp;своя webpack сборка</li>
+                  </ul>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="flip-container vertical site-portf-block">
+              <a href="https://github.com/C01dy/react-todo-app" target="_blank">
+              <div class="flipper">
+                <div class="front">
+                  <h4 class="text-uppercase">TODO App</h4>
+                </div>
+                <div class="back p-3">
+                  <ul>
+                    <li>&mdash;&nbsp;Добваление и удаление</li>
+                    <li>&mdash;&nbsp;Редактирование</li>
+                    <li>&mdash;&nbsp;Живой поиск</li>
+                    <li>&mdash;&nbsp;Фильтрация по категориям</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="flip-container vertical site-portf-block"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <a href="https://github.com/C01dy/bean-love-beers" target="_blank">
+                <div class="flipper">
+                  <div class="front">
+                    <h4 class="text-uppercase">Bean love beer</h4>
+                  </div>
+                  <div class="back p-3">
+                    <ul>
+                      <li>&mdash;&nbsp;Асинхронные запросы</li>
+                      <li>&mdash;&nbsp;Пойск с запросом</li>
+                      <li>&mdash;&nbsp;Пагинация</li>
+                      <li>
+                        &mdash;&nbsp;Возможность добавлять в избранное, и
+                        удалять
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-contacts pt-5 pb-3 section">
+      <a name="contacts"></a>
+      <div class="container">
+
+        <div class="row justify-content-around wow animate__flipInX">
+            <a href="https://github.com/C01dy" target="_blank" class="site-contacts__link site-contacts__github box bounce-2">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://vk.com/vladislav_moskvichev" target="_blank" class="site-contacts__link box bounce-2 site-contacts__vk">
+              <i class="fab fa-vk"></i>
+            </a>  
+            <a href="https://t.me/C01dy" target="_blank" class="site-contacts__link box bounce-2 site-contacts__tg">
+              <i class="fab fa-telegram"></i>
+            </a>  
         </div>
       </div>
     </div>
