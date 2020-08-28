@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -17,11 +22,22 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Oswald:wght@200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/anim.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="site-header sticky-top p-2 bg-dark text-white">
+    <header class="site-header sticky-top p-2 text-white">
       <div class="container d-flex flex-md-row justify-content-between">
         <a href="#" class="site-header__link text-white">Главная</a>
         <a href="#" class="site-header__link text-white">Обо мне</a>
@@ -35,33 +51,35 @@
       <div
         class="container d-flex justify-content-center align-items-center site-main-inner"
       >
-        <div class="site-main-content col-md-6 mx-auto mouse-parallax-bg">
+        <div class="site-main-content col-md-6 mx-auto wow fadeInLeft">
           <h1 class="site-main__title text-uppercase p-4">
             Привет, меня зовут Влад,<br />
-            я <span class="text-info">front-end</span> разработчик.
+            я <span class="front-end">front-end</span> разработчик.
           </h1>
           <span class="tag tag-1">&lt;section&gt;</span>
           <span class="tag tag-2">&lt;header&gt;</span>
           <span class="tag tag-3">&lt;footer&gt;</span>
           <span class="tag tag-4">&lt;br&gt;</span>
 
-          <span class="tag tag-5 text-danger">&lt;main&gt;</span>
-          <span class="tag tag-6 text-success">&lt;article&gt;</span>
-          <span class="tag tag-7 text-danger">&lt;strong&gt;</span>
-          <span class="tag tag-8 text-success">&lt;abbr&gt;</span>
+          <span class="tag tag-5">&lt;main&gt;</span>
+          <span class="tag tag-6">&lt;article&gt;</span>
+          <span class="tag tag-7">&lt;strong&gt;</span>
+          <span class="tag tag-8">&lt;abbr&gt;</span>
         </div>
       </div>
     </div>
 
     <div class="site-about pb-5">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-start">
           <div class="col-md-4">
-            <h1 class="site-dark-title section-title p-2 mt-5 mb-5">Обо мне</h1>
+              <h1 class="site-dark-title section-title pt-2 pb-2 mt-5 mb-5">
+                Обо мне
+              </h1>
           </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-start wow animate__backInLeft">
           <div class="col-md-10">
             <p class="site-about__text">
               Занимаюсь веб-разработкой. В основном писал проекты с помощью
@@ -82,20 +100,20 @@
 
     <div class="site-skills pt-5 pb-5 dotted">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-start">
           <div class="col-md-4">
-            <h1 class="site-skills__title section-title p-2 mt-5 mb-5">
+            <h1 class="site-skills__title section-title pt-2 mt-5 mb-4">
               Навыки
             </h1>
           </div>
         </div>
 
-        <div class="row justify-content-between mt-5">
-          <div class="col-md-4 border-dark">
-            <h1 class="site-skills-title p-3 border-bottom border-dark">
-              JavaScript
+        <div class="row justify-content-between mt-5 wow fadeInUp">
+          <div class="col-md-4 skills-js">
+            <h1 class="site-skills-title pt-3 pl-3">
+              JavaScript &nbsp;<i class="fab fa-js"></i>
             </h1>
-            <ul class="site-skills-list list-group p-2 ml-4">
+            <ul class="site-skills-list list-group p-3 ml-4">
               <li class="mt-2">EcmaScript5+</li>
               <li class="">React (react hooks, react-router)</li>
               <li class="">Redux (redux-thunk)</li>
@@ -103,22 +121,22 @@
               <li class="">Регулярные выражения</li>
             </ul>
           </div>
-          <div class="col-md-4  border-left border-right border-dark">
-            <h1 class="site-skills-title p-3 border-bottom border-dark">
-              Вёрстка
+          <div class="col-md-4 skills-html">
+            <h1 class="site-skills-title pt-3 pl-3">
+              Вёрстка &nbsp;<i class="fas fa-code"></i>
             </h1>
-            <ul class="site-skills-list list-group p-2 ml-4">
+            <ul class="site-skills-list list-group p-3 ml-4">
               <li class="mt-2">Flexbox</li>
               <li class="">CSS Grid</li>
               <li class="">Bootstrap</li>
               <li class="">Адаптивная вёрстка (основы)</li>
             </ul>
           </div>
-          <div class="col-md-4  border-dark">
-            <h1 class="site-skills-title p-3 border-bottom border-dark">
-              Другое
+          <div class="col-md-4 skills-another">
+            <h1 class="site-skills-title pt-3 pl-3">
+              Другое &nbsp;<i class="fas fa-smile"></i>
             </h1>
-            <ul class="site-skills-list list-group p-2 ml-4">
+            <ul class="site-skills-list list-group p-3 ml-4">
               <li class="mt-2">Webpack</li>
               <li class="">Photoshop</li>
               <li class="">Babel</li>
@@ -140,11 +158,10 @@
       </div>
     </div>
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./scripts/index.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
