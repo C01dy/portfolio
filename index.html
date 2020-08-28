@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="site-header sticky-top p-2 bg-dark text-white">
+      <div class="container d-flex flex-md-row justify-content-between">
+        <a href="#" class="site-header__link text-white">Главная</a>
+        <a href="#" class="site-header__link text-white">Обо мне</a>
+        <a href="#" class="site-header__link text-white">Навыки</a>
+        <a href="#" class="site-header__link text-white">Работы</a>
+        <a href="#" class="site-header__link text-white">Контакты</a>
+      </div>
+    </header>
+
+    <div class="site-main">
+      <div
+        class="container d-flex justify-content-center align-items-center site-main-inner"
+      >
+        <div class="site-main-content col-md-6 mx-auto mouse-parallax-bg">
+          <h1 class="site-main__title text-uppercase p-4">
+            Привет, меня зовут Влад,<br />
+            я <span class="text-info">front-end</span> разработчик.
+          </h1>
+          <span class="tag tag-1">&lt;section&gt;</span>
+          <span class="tag tag-2">&lt;header&gt;</span>
+          <span class="tag tag-3">&lt;footer&gt;</span>
+          <span class="tag tag-4">&lt;br&gt;</span>
+
+          <span class="tag tag-5 text-danger">&lt;main&gt;</span>
+          <span class="tag tag-6 text-success">&lt;article&gt;</span>
+          <span class="tag tag-7 text-danger">&lt;strong&gt;</span>
+          <span class="tag tag-8 text-success">&lt;abbr&gt;</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-about pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h1 class="site-dark-title section-title p-2 mt-5 mb-5">Обо мне</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <p class="site-about__text">
+              Занимаюсь веб-разработкой. В основном писал проекты с помощью
+              библиотеки React в связке с Redux. В портфолио имеются пару
+              проектов, где реализованы CRUD операции. Также создавал React
+              приложение с нуля без помощи пакета CRA, делал базовую сборку
+              проекта(webpack, babel). Имеется опыт создания формы с валидацией
+              при помощи библиотеки react-hook-form, в которой применялась
+              проверка регулярными выражениями. Имею базовые знания по платформе
+              NodeJS. Что касается вёрстки - есть опыт работы с современными
+              технологиями:&nbsp; flexbox, css grid, bootstrap. Я открыт к новым
+              знаниям, и буду рад учиться новым технологиям и работе в команде!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-skills pt-5 pb-5 dotted">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h1 class="site-skills__title section-title p-2 mt-5 mb-5">
+              Навыки
+            </h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-between mt-5">
+          <div class="col-md-4 border-dark">
+            <h1 class="site-skills-title p-3 border-bottom border-dark">
+              JavaScript
+            </h1>
+            <ul class="site-skills-list list-group p-2 ml-4">
+              <li class="mt-2">EcmaScript5+</li>
+              <li class="">React (react hooks, react-router)</li>
+              <li class="">Redux (redux-thunk)</li>
+              <li class="">NodeJS (основы)</li>
+              <li class="">Регулярные выражения</li>
+            </ul>
+          </div>
+          <div class="col-md-4  border-left border-right border-dark">
+            <h1 class="site-skills-title p-3 border-bottom border-dark">
+              Вёрстка
+            </h1>
+            <ul class="site-skills-list list-group p-2 ml-4">
+              <li class="mt-2">Flexbox</li>
+              <li class="">CSS Grid</li>
+              <li class="">Bootstrap</li>
+              <li class="">Адаптивная вёрстка (основы)</li>
+            </ul>
+          </div>
+          <div class="col-md-4  border-dark">
+            <h1 class="site-skills-title p-3 border-bottom border-dark">
+              Другое
+            </h1>
+            <ul class="site-skills-list list-group p-2 ml-4">
+              <li class="mt-2">Webpack</li>
+              <li class="">Photoshop</li>
+              <li class="">Babel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-portf">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h1 class="site-dark-title section-title p-2 mt-5 mb-5">
+              Мои работы
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

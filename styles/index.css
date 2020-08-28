@@ -1,0 +1,179 @@
+:root {
+  --light: #eef7fb;
+  --blue: #c8e2f0;
+  --dark-crimson: #692536;
+  --dark1: #261923;
+  --dark2: #1e212e;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: lavender; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+/* MAIN SECTION */
+.site-main-inner {
+  height: 100vh;
+}
+
+.site-main__title {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  line-height: 1.1em;
+  color: var(--dark2);
+}
+
+.site-main-content {
+  position: relative;
+}
+
+.mouse-parallax-bg {
+  /* position: absolute; */
+  transition: all 0.1s ease;  
+}
+
+/* tags */
+
+.tag {
+  position: absolute;
+  font-size: 1.5em;
+  font-family: 'Indie Flower', cursive;
+  opacity: 0.8;
+}
+
+.tag-1 {
+  bottom: 180px;
+  right: 100%;
+}
+
+.tag-2 {
+  bottom: 180px;
+  left: 100%;
+}
+
+.tag-3 {
+  top: 180px;
+  left: 100%;
+}
+
+.tag-4 {
+  top: 180px;
+  right: 110%;
+}
+
+.tag-5 {
+  top: 100px;
+  bottom: 0;
+  right: 110%;
+}
+
+.tag-6 {
+  top: 100px;
+  bottom: 0;
+  left: 110%;
+}
+
+.tag-7 {
+  top: 0;
+  left: 110%;
+}
+
+.tag-8 {
+  top: 0;
+  right: 110%;
+}
+/* MAIN SECTION */
+
+/* ABOUT SECTION */
+.site-about {
+  background-color: var(--dark2);
+  color: whitesmoke;
+}
+
+.site-dark-title {
+  border: 2px solid whitesmoke;
+  width: 100%;
+}
+
+.site-about__text {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+}
+/* ABOUT SECTION */
+
+/* SKILLS SECTION */
+.site-skills {
+  color: var(--dark2);
+}
+
+.site-skills__title {
+  border: 2px solid black;
+}
+
+
+.site-skills-list {
+  list-style-type: square
+}
+
+.site-skills-list li {
+  font-size: 1.5em;
+}
+
+.dotted {
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 1px,
+    transparent 1px,
+    transparent 100%
+  );
+  background-image: -moz-repeating-radial-gradient(
+    center center,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 1px,
+    transparent 1px,
+    transparent 100%
+  );
+  background-image: -ms-repeating-radial-gradient(
+    center center,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 1px,
+    transparent 1px,
+    transparent 100%
+  );
+  background-image: repeating-radial-gradient(
+    center center,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 1px,
+    transparent 1px,
+    transparent 100%
+  );
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+}
+/* SKILLS SECTION */
+
+/* PORTFOLIO SECTION */
+.site-portf {
+  background-color: var(--dark2);
+  color: whitesmoke;
+}
+/* PORTFOLIO SECTION */
