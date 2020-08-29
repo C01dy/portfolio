@@ -15,6 +15,10 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
@@ -37,17 +41,17 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="site-header sticky-top p-2">
+    <header class="site-header sticky-top p-2 wow animate__backInDown">
       <div class="container d-flex flex-md-row justify-content-between">
-        <a href="#main" class="site-header__link">Главная</a>
-        <a href="#about" class="site-header__link">Обо мне</a>
-        <a href="#skills" class="site-header__link">Навыки</a>
-        <a href="#portfolio" class="site-header__link">Работы</a>
-        <a href="#contacts" class="site-header__link">Контакты</a>
+        <a href="#main" class="site-header__link"><span>Главная</span></a>
+        <a href="#about" class="site-header__link"><span>Обо мне</span></a>
+        <a href="#skills" class="site-header__link"><span>Навыки</span></a>
+        <a href="#portfolio" class="site-header__link"><span>Работы</span></a>
+        <a href="#contacts" class="site-header__link"><span>Контакты</span></a>
       </div>
     </header>
 
-    <div class="site-main section">
+    <div class="site-main">
       <a name="main"></a>
       <div
         class="container d-flex justify-content-center align-items-center site-main-inner"
@@ -70,8 +74,7 @@
       </div>
     </div>
 
-    <div class="site-about pb-5 section">
-      
+    <div class="site-about pb-5">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-4">
@@ -83,9 +86,10 @@
             </h1>
           </div>
         </div>
-        
-        
-        <div class="row justify-content-start wow animate__backInLeft">
+
+        <div
+          class="row justify-content-start wow animate__backInLeft site-about-content"
+        >
           <div class="col-md-10">
             <p class="site-about__text">
               Занимаюсь веб-разработкой. В основном писал проекты с помощью
@@ -104,7 +108,7 @@
       </div>
     </div>
 
-    <div class="site-skills pt-5 pb-5 section">
+    <div class="site-skills pt-5 pb-5">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-4">
@@ -117,7 +121,9 @@
           </div>
         </div>
 
-        <div class="row justify-content-between mt-5 wow animate__swing">
+        <div
+          class="row justify-content-between mt-5 wow animate__swing skills-row"
+        >
           <div class="col-md-4 skills-js">
             <h1 class="site-skills-title pt-3 pl-3">
               JavaScript &nbsp;<i class="fab fa-js"></i>
@@ -155,12 +161,14 @@
       </div>
     </div>
 
-    <div class="site-portf pb-5 section">
+    <div class="site-portf pb-5">
       <a name="portfolio"></a>
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-4">
-            <h1 class="site-dark-title section-title pt-2 pb-3 mt-5 mb-5 wow animate__rotateInDownLeft">
+            <h1
+              class="site-dark-title section-title pt-2 pb-3 mt-5 mb-5 wow animate__rotateInDownLeft"
+            >
               Мои работы
             </h1>
           </div>
@@ -172,20 +180,25 @@
               class="flip-container vertical site-portf-block"
               ontouchstart="this.classList.toggle('hover');"
             >
-            <a href="https://github.com/C01dy/bookstore-react-redux" target="_blank">
-              <div class="flipper">
-                <div class="front">
-                  <h4 class="text-uppercase">Book store</h4>
+              <a
+                href="https://github.com/C01dy/bookstore-react-redux"
+                target="_blank"
+              >
+                <div class="flipper">
+                  <div class="front">
+                    <h4 class="text-uppercase">Book store</h4>
+                  </div>
+                  <div class="back pl-3">
+                    <ul>
+                      <li>
+                        &mdash;&nbsp;Добваление товара в корзину, и удаление
+                      </li>
+                      <li>&mdash;&nbsp;Редактирование корзины</li>
+                      <li>&mdash;&nbsp;Фильтрация товаров</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="back pl-3">
-                  <ul>
-                    <li>&mdash;&nbsp;Добваление товара в корзину, и удаление</li>
-                    <li>&mdash;&nbsp;Редактирование корзины</li>
-                    <li>&mdash;&nbsp;Фильтрация товаров</li>
-                  </ul>
-                </div>
-              </div>
-            </a>
+              </a>
             </div>
           </div>
           <div class="col-md-3">
@@ -193,40 +206,43 @@
               class="flip-container vertical site-portf-block"
               ontouchstart="this.classList.toggle('hover');"
             >
-            <a href="https://github.com/C01dy/react-bank-card-form" target="_blank">
-              <div class="flipper">
-                <div class="front">
-                  <h4 class="text-uppercase">Credit-card from</h4>
+              <a
+                href="https://github.com/C01dy/react-bank-card-form"
+                target="_blank"
+              >
+                <div class="flipper">
+                  <div class="front">
+                    <h4 class="text-uppercase">Credit-card from</h4>
+                  </div>
+                  <div class="back p-3">
+                    <ul>
+                      <li>&mdash;&nbsp;Форма с валидацией</li>
+                      <li>&mdash;&nbsp;Регулярные выражения</li>
+                      <li>&mdash;&nbsp;react-hook-form</li>
+                      <li>&mdash;&nbsp;своя webpack сборка</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="back p-3">
-                  <ul>
-                    <li>&mdash;&nbsp;Форма с валидацией</li>
-                    <li>&mdash;&nbsp;Регулярные выражения</li>
-                    <li>&mdash;&nbsp;react-hook-form</li>
-                    <li>&mdash;&nbsp;своя webpack сборка</li>
-                  </ul>
-                </div>
-              </div>
               </a>
             </div>
           </div>
           <div class="col-md-3">
             <div class="flip-container vertical site-portf-block">
               <a href="https://github.com/C01dy/react-todo-app" target="_blank">
-              <div class="flipper">
-                <div class="front">
-                  <h4 class="text-uppercase">TODO App</h4>
+                <div class="flipper">
+                  <div class="front">
+                    <h4 class="text-uppercase">TODO App</h4>
+                  </div>
+                  <div class="back p-3">
+                    <ul>
+                      <li>&mdash;&nbsp;Добваление и удаление</li>
+                      <li>&mdash;&nbsp;Редактирование</li>
+                      <li>&mdash;&nbsp;Живой поиск</li>
+                      <li>&mdash;&nbsp;Фильтрация по категориям</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="back p-3">
-                  <ul>
-                    <li>&mdash;&nbsp;Добваление и удаление</li>
-                    <li>&mdash;&nbsp;Редактирование</li>
-                    <li>&mdash;&nbsp;Живой поиск</li>
-                    <li>&mdash;&nbsp;Фильтрация по категориям</li>
-                  </ul>
-                </div>
-              </div>
-            </a>
+              </a>
             </div>
           </div>
           <div class="col-md-3">
@@ -234,7 +250,10 @@
               class="flip-container vertical site-portf-block"
               ontouchstart="this.classList.toggle('hover');"
             >
-              <a href="https://github.com/C01dy/bean-love-beers" target="_blank">
+              <a
+                href="https://github.com/C01dy/bean-love-beers"
+                target="_blank"
+              >
                 <div class="flipper">
                   <div class="front">
                     <h4 class="text-uppercase">Bean love beer</h4>
@@ -258,20 +277,31 @@
       </div>
     </div>
 
-    <div class="site-contacts pt-5 pb-3 section">
+    <div class="site-contacts pt-5 pb-3">
       <a name="contacts"></a>
       <div class="container">
-
-        <div class="row justify-content-around wow animate__flipInX">
-            <a href="https://github.com/C01dy" target="_blank" class="site-contacts__link site-contacts__github box bounce-2">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://vk.com/vladislav_moskvichev" target="_blank" class="site-contacts__link box bounce-2 site-contacts__vk">
-              <i class="fab fa-vk"></i>
-            </a>  
-            <a href="https://t.me/C01dy" target="_blank" class="site-contacts__link box bounce-2 site-contacts__tg">
-              <i class="fab fa-telegram"></i>
-            </a>  
+        <div class="row justify-content-around wow animate__flipInX links-row">
+          <a
+            href="https://github.com/C01dy"
+            target="_blank"
+            class="site-contacts__link site-contacts__github box bounce-github"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://vk.com/vladislav_moskvichev"
+            target="_blank"
+            class="site-contacts__link box site-contacts__vk box bounce-vk"
+          >
+            <i class="fab fa-vk"></i>
+          </a>
+          <a
+            href="https://t.me/C01dy"
+            target="_blank"
+            class="site-contacts__link site-contacts__tg box bounce-tg"
+          >
+            <i class="fab fa-telegram"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -280,6 +310,8 @@
     <script>
       new WOW().init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>

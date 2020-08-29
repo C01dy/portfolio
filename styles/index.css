@@ -11,6 +11,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--dark)
 }
 
 * {
@@ -26,9 +27,13 @@ ul {
   list-style-type: none;
 }
 
+.section {
+  height: 100vh;
+}
 
 .section-title {
   text-shadow: 0px 6px 17px rgba(0,0,0,0.43);
+  font-family: 'Jost', sans-serif;
 }
 
 .section-title::after {
@@ -64,16 +69,19 @@ ul {
 .site-header {
   color: var(--yellow);
   background-color: #110e0f;
-  border-bottom: 1px solid var(--yellow)
+  border-bottom: 1px solid var(--yellow);
+  font-family: 'Jost', sans-serif;
 }
 
 .site-header__link {
   color: var(--yellow);
   transition: .3s;
+  text-decoration: none
 }
 
 .site-header__link:hover {
-  transform: skew(-10deg);
+  color: var(--pink1);
+  text-decoration: none
 }
 /* header */
 
@@ -198,7 +206,8 @@ ul {
     rgb(67, 184, 196),
     rgb(35, 216, 207)
   );
-  color: wheat;
+  color: whitesmoke;
+  font-family: 'Jost', sans-serif;
 }
 
 .site-dark-title {
@@ -211,6 +220,10 @@ ul {
   text-align: start;
 }
 
+.site-about-content {
+  position: sticky
+}
+
 /* ABOUT SECTION */
 
 /* SKILLS SECTION */
@@ -219,12 +232,18 @@ ul {
   background-color: var(--dark);
 }
 
+.skills-row {
+  animation-duration: 2s;
+}
+
 .site-skills__title {
   color: #1b96f3
 }
 
 .site-skills-list {
   list-style-type: square;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
 }
 
 .site-skills-list li {
@@ -295,6 +314,10 @@ ul {
 
 .site-contacts__tg {
   color: #0088cc
+}
+
+.links-row {
+  animation-duration: 2s;
 }
 
 /* CONTACT SECTION */

@@ -1,10 +1,10 @@
 :root {
-    --pink1: #fe0ab7;
-    --pink2: #e50185;
-    --yellow: #e9ff88;
-    --dark: #111010;
-    --grey: #d0ccd1;
-  }
+  --pink1: #fe0ab7;
+  --pink2: #e50185;
+  --yellow: #e9ff88;
+  --dark: #111010;
+  --grey: #d0ccd1;
+}
 
 .flip-container {
   perspective: 500px;
@@ -36,7 +36,6 @@
   border: 2px solid var(--grey);
 }
 
-
 .front {
   z-index: 2;
   transform: rotateY(0deg);
@@ -44,12 +43,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
 .front h4 {
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Jost', sans-serif;
 }
 
 .back {
@@ -58,13 +58,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-size: 15px
+  font-size: 15px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  box-shadow: 10px -10px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
 .back ul {
-    margin: 0;
-    padding: 0;
-    color: whitesmoke
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
 }
 
 .vertical.flip-container {
@@ -84,23 +87,64 @@
 }
 
 .site-portf-block {
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+  /* box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75); */
 }
-
-
 
 .box {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
 }
-.bounce-2 {
-  animation-name: bounce-2;
+.bounce-github {
+  animation-name: bounce-github;
   animation-timing-function: ease;
 }
-@keyframes bounce-2 {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-25px); }
-  100% { transform: translateY(0); }
+
+.bounce-vk {
+  animation-name: bounce-vk;
+  animation-timing-function: ease;
+}
+
+.bounce-tg {
+  animation-name: bounce-tg;
+  animation-timing-function: ease;
+}
+@keyframes bounce-github {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-vk {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-tg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 /* link fly */
+
+
+
